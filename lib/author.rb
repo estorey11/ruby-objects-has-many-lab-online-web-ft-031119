@@ -21,4 +21,10 @@ class Author
   def posts
     @posts 
   end
+  
+  def self.post_count
+    count=0 
+    @@all.each {|author| count+=authour.posts.size}
+    count
+  end
 end
